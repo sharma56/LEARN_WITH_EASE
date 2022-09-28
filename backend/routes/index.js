@@ -5,5 +5,13 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
+router.get('/data', function(req, res, next) {
+  var k ={
+    name:"Rac",
+    lastname:"kfjdfkdjf"
+  };
+  res.json(k);
+});
+
 
 module.exports = router;
